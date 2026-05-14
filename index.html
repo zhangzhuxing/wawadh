@@ -1,0 +1,2823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="preload" as="image" href="https://wawadh.pages.dev/assets/loading.gif">
+  <link rel="preload" as="script" href="https://opensug.pages.dev/1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>蛙蛙导航 - 极简实用网址导航 - 开源版</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="在线导航,网址导航,实用工具,网站入口,精选网站,导航网站,蛙蛙导航,极简导航,优质网址">
+  <meta name="description" content="蛙蛙导航是一个极简实用的网址导航网站，精选优质网站入口，提供实用工具、影音资源、学习资料等分类导航，方便用户快速访问各类网站，是您上网的好帮手。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wawadh.pages.dev">
+  <meta property="og:title" content="蛙蛙导航 - 极简实用网址导航">
+  <meta property="og:description" content="蛙蛙导航是一个极简实用的网址导航网站，精选优质网站入口，提供实用工具、影音资源、学习资料等分类导航，方便用户快速访问各类网站，是您上网的好帮手。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wawadh.pages.dev">
+  <meta property="og:image" content="https://wawadh.pages.dev/assets/imgs/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="蛙蛙导航 - 极简实用网址导航">
+  <meta name="twitter:description" content="蛙蛙导航是一个极简实用的网址导航网站，精选优质网站入口，提供实用工具、影音资源、学习资料等分类导航，方便用户快速访问各类网站，是您上网的好帮手。">
+  <meta name="twitter:image" content="https://wawadh.pages.dev/assets/imgs/logo.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <meta content="always" name="referrer">
+  <base target="_blank">
+</head>
+<body>
+  <!-- 顶部功能区 -->
+  <div class="main-content mt-15">
+    <!-- 左侧标志:开始 -->
+    <div class="logo-section">
+      <div class="logo-main">
+        <div class="logo-icon">
+          <img alt="蛙蛙导航" src="assets/imgs/logo.png" class="w-auto h-60 align-middle" />
+        </div>
+      </div>
+      <!-- 图标部分 -->
+      <div class="logo-icons">
+        <a href="" class="icon-item no-underline">
+          <img alt="极简主页" src="assets/imgs/zhuye.png" class="w-32 h-32"><span>极简主页</span>
+        </a>
+        <a href="" class="icon-item no-underline">
+          <img alt="极简主页" src="assets/imgs/ai.png" class="w-32 h-32" /><span>蛙蛙AI库</span>
+        </a>
+        <a href="" class="icon-item no-underline">
+          <img alt="摸鱼游戏" src="assets/imgs/youxi.png" class="w-32 h-32" /><span>摸鱼游戏</span>
+        </a>
+        <a href="about.html" class="icon-item no-underline">
+          <img alt="关于本站" src="assets/imgs/fankui.png" class="w-32 h-32" /><span>关于本站</span>
+        </a>
+      </div>
+    </div>
+    <!-- 左侧标志:结束 -->
+    <!-- 搜索区域:开始 -->
+    <div class="search-section">
+      <div class="search-options">
+        <a target="_self" href="javascript:void(0)" class="option-item active" data-engine="baidu">百度</a>
+        <a target="_self" href="javascript:void(0)" class="option-item" data-engine="haoso">360</a>
+        <a target="_self" href="javascript:void(0)" class="option-item" data-engine="taobao">购物</a>
+        <a target="_self" href="javascript:void(0)" class="option-item" data-engine="youku">影视</a>
+        <a target="_self" href="javascript:void(0)" class="option-item" data-engine="kugou">音乐</a>
+        <a target="_self" href="javascript:void(0)" class="option-item" data-engine="soft">软件</a>
+        <a target="_self" href="javascript:void(0)" class="option-item" data-engine="car">汽车</a>
+      </div>
+      <div class="search-box-wrapper">
+        <div class="search-box">
+          <input type="text" id="soKeyWord" name="soKeyWord" placeholder="百度一下" autocomplete="off" />
+          <button type="button" id="soBtn">搜索</button>
+        </div>
+        <div class="datetime-display">
+          <div class="time" id="currentTime">00:00</div>
+          <div class="date" id="currentDate">1月1日 星期一</div>
+        </div>
+      </div>
+      <div class="announcement">
+        <div class="announcement-container">
+          <a target="_self" href="javascript:void(0)" class="announcement-text">请记住蛙蛙导航官方网址 - www.wawadh.cn</a>
+          <a target="_self" href="javascript:void(0)" class="announcement-text">如链接失效、违规，请联系我们删除！</a>
+          <a target="_self" href="javascript:void(0)" class="announcement-text">友情提示：请合理使用网络资源，遵守相关法律法规！</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 顶部功能区:结束 -->
+  <!-- 主功能区 -->
+  <div class="mainContainer">
+    <div id="autoLoadPage" class="LtopicContainer" autopath="">
+      <div class="collect-card mb-2 p-1">
+        <div class="collect-card-header pt-1 -r-2 pb-2 pl-2 flex-between">
+          <div class="flex">
+            <h3 class="term-title" id="term-1834">站长推荐</h3>
+            <a href="//qm.qq.com/cgi-bin/qm/qr?k=tWNFxRGRyYkvfgVhUAMQSf-Pkqly4SU_&jump_from=webapi&authKey=VNsawBRaz2HqY8rpDrpDAt4vFX/yWz4NOktEXOdNVP5O85KHOSg2cEqKWAPQFAhl" class="text-12 bg-green-light px-6 py-2 rounded-4 no-underline text-green ml-8">点击加入</a>
+          </div>
+          <a target="_self" href="javascript:void(0)" onclick="openHistoryPopup()" class="text-12 bg-gray-light px-6 py-2 rounded-4 no-underline text-gray">最近访问</a>
+        </div>
+        <div class="collect-card-content">
+          <div class="collect-card-tab pr-1 pl-1 pb-1 tab-active" id="tab-2">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <div class="absolute top-n3 left-n3 bg-red text-white text-10 font-bold px-2 py-1 rotate-n15 z-10 rounded-4">荐</div>
+              <a class="site-def-url-card" href="123">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/ad.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">置顶招租</div>
+                    <div class="site-def-url-desc">
+                      <p>置顶广告位招租</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <div class="absolute top-n3 left-n3 bg-red text-white text-10 font-bold px-2 py-1 rotate-n15 z-10 rounded-4">荐</div>
+              <a class="site-def-url-card" href="//www.bzl.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/bzl.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">不找了</div>
+                    <div class="site-def-url-desc">
+                      <p>专为白嫖怪打造的互联网净土</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <div class="absolute top-n3 left-n3 bg-red text-white text-10 font-bold px-2 py-1 rotate-n15 z-10 rounded-4">荐</div>
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/xjj/">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/meitu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">蛙趣视频</div>
+                    <div class="site-def-url-desc">
+                      <p>福利精选短视频</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <div class="absolute top-n3 left-n3 bg-red text-white text-10 font-bold px-2 py-1 rotate-n15 z-10 rounded-4">荐</div>
+              <a class="site-def-url-card" href="https://12315fw.com/">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/555.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">555影视</div>
+                    <div class="site-def-url-desc">
+                      <p>最新Netflix新剧</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://xn--hlrz51de1z.pages.dev">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/liu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">超值流量卡</div>
+                    <div class="site-def-url-desc">
+                      <p>大流量免费包邮到家</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a target="_self" class="site-def-url-card" href="javascript:void(0)" onclick="openWaimaiPopup()">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/waimai.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">外卖红包</div>
+                    <div class="site-def-url-desc">
+                      <p>点外卖领优惠</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainContainer">
+    <div id="autoLoadPage" class="LtopicContainer" autopath="">
+      <div class="collect-card mb-2 p-1">
+        <div class="collect-card-header pt-1 -r-2 pb-2 pl-2">
+          <h3 class="term-title" id="term-1836">影音资源</h3>
+          <div class="term-separator"></div>
+          <div class="term-tab">
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-2" class="term-tab-switch term-active">影视</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-3" class="term-tab-switch">动漫</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-4" class="term-tab-switch">短剧</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-8" class="term-tab-switch">音乐</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-156" class="term-tab-switch">小说</a></div>
+          </div>
+        </div>
+        <div class="collect-card-content">
+          <div class="collect-card-tab pr-1 pl-1 pb-1 tab-active" id="tab-2">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/jiexi/">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/jx.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">VIP影视解析</div>
+                    <div class="site-def-url-desc">
+                      <p>全网视频免费看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://yinghezhinan.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yinghe.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">硬核指南</div>
+                    <div class="site-def-url-desc">
+                      <p>专业影视导航指南</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://v.ikanbot.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/aikan.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">爱看机器人</div>
+                    <div class="site-def-url-desc">
+                      <p>聚合影视搜索引擎</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://tkys3.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/tk.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">天空影视</div>
+                    <div class="site-def-url-desc">
+                      <p>聚合热门电影、电视剧、综艺与动漫的观影平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//12315fw.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/555.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">555影视</div>
+                    <div class="site-def-url-desc">
+                      <p>最新Netflix新剧</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.5ggtv.cc">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/555.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">无广告TV</div>
+                    <div class="site-def-url-desc">
+                      <p>全网影视免费在线观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//juok.cc">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/juok.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">剧ok</div>
+                    <div class="site-def-url-desc">
+                      <p>无广告舒适播放</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//gaze.host">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/zhushi.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">注视影视</div>
+                    <div class="site-def-url-desc">
+                      <p>清晰但片源不全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//viptu.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/sou.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">VIP兔观影</div>
+                    <div class="site-def-url-desc">
+                      <p>自由观影，畅享精彩</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//hellociqryx6e.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/jg.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">极光影视</div>
+                    <div class="site-def-url-desc">
+                      <p>免费高清影视在线看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.mtyy5.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/mt.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">麦田影院</div>
+                    <div class="site-def-url-desc">
+                      <p>好看的电影电视剧</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//cn.ifn.watch">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/inf.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">IFN影视</div>
+                    <div class="site-def-url-desc">
+                      <p>提供最高4K画质的影视站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//dyrshd.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/55.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">电影人生</div>
+                    <div class="site-def-url-desc">
+                      <p>海里高清视频免费观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//xlys.me">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xiuluo.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">修罗影视</div>
+                    <div class="site-def-url-desc">
+                      <p>最新热门影视电影</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.wkvod.cc">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/wukong.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">悟空影视</div>
+                    <div class="site-def-url-desc">
+                      <p>最新热门影视电影</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//wooyun.tv">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/svg/wu.svg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">乌云影视</div>
+                    <div class="site-def-url-desc">
+                      <p>在线视频网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.bahaotv.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/888.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">八号影院</div>
+                    <div class="site-def-url-desc">
+                      <p>高清影视在线播放</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.bestpipe.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/bsp.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">百思派电影</div>
+                    <div class="site-def-url-desc">
+                      <p>全网vip点映免费看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.yingshiso.link">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/gs.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">光速影视</div>
+                    <div class="site-def-url-desc">
+                      <p>光速观影，多片源，不卡顿</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//kptv.app">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/tv.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">看片TV</div>
+                    <div class="site-def-url-desc">
+                      <p>海量影视免费观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.novipnoad.cc">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/no.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">NO视频</div>
+                    <div class="site-def-url-desc">
+                      <p>主打海外影视剧</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//bbys.app">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/3q.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">布布影视</div>
+                    <div class="site-def-url-desc">
+                      <p>手机端需下载app</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//tv.cctv.com/live/m/index.shtml">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/cctv.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">央视直播</div>
+                    <div class="site-def-url-desc">
+                      <p>央视节目在线直播</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="http://tv.zimtv.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/tv.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">电视直播</div>
+                    <div class="site-def-url-desc">
+                      <p>在线电视直播观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//lemonlive.deno.dev/huya">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/zhi.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">聚合直播平台</div>
+                    <div class="site-def-url-desc">
+                      <p>虎牙斗鱼抖音等聚合直播</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-3">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//fb.gugufan.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/gugufan.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">咕咕番</div>
+                    <div class="site-def-url-desc">
+                      <p>在线日漫免费观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//acgfta.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/fan.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">饭团动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>新番在线免费观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//yhdm6.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yinghua.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">樱花动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>专业动漫门户网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.agedm.io">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/age.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">AGE动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>在线动漫观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.2rk.cc">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/2.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">二矿动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>超高清画质动漫网</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//cn.agekkkk.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/4kdm.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">4k动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>在线看动漫网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//anich.emmmm.eu.org">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/a.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">AniCh动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>AniCh动漫弹幕网</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.dmmiku.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/dm.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">动漫MIKU</div>
+                    <div class="site-def-url-desc">
+                      <p>精选优质日漫动漫</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//skr.skr3.cc:666">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ying.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">樱之空动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>动漫在线播放网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//ads-static.xhscdn.com/crm/104101sg314kceo3tg206crb9bg0000001c1h4j1m7si14">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/fanshu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">番薯动漫</div>
+                    <div class="site-def-url-desc">
+                      <p>追番的最佳归属</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.yymanhua.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/baozi.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">日本漫画</div>
+                    <div class="site-def-url-desc">
+                      <p>老牌漫画阅读站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.hisoman.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/sm.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">搜漫</div>
+                    <div class="site-def-url-desc">
+                      <p>聚合漫画搜索引擎</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//godamh.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/mh.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">G站漫画</div>
+                    <div class="site-def-url-desc">
+                      <p>优质漫画内容</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.fengchemh.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/fc.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">风车漫画</div>
+                    <div class="site-def-url-desc">
+                      <p>在线漫画观看网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-4">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.hongguoduanju.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/hong.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">红果短剧</div>
+                    <div class="site-def-url-desc">
+                      <p>顶流短剧平台需下载</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//djw1.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/djw.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">短剧王</div>
+                    <div class="site-def-url-desc">
+                      <p>精选优质短剧内容</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.kdj.one">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/kdj.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">看短剧</div>
+                    <div class="site-def-url-desc">
+                      <p>免费短剧在线观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//minidrama.contentchina.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/xifu.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">喜福短剧</div>
+                    <div class="site-def-url-desc">
+                      <p>优质免费短剧平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.duanju55.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/55.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">55短剧</div>
+                    <div class="site-def-url-desc">
+                      <p>海量免费短剧观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.thyilian.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/huasheng.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">花生短剧</div>
+                    <div class="site-def-url-desc">
+                      <p>免费在线观看短剧</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.kuaikaw.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/hema.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">河马剧场</div>
+                    <div class="site-def-url-desc">
+                      <p>需要下载app观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//zhongduanju.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/zhong.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">众短剧</div>
+                    <div class="site-def-url-desc">
+                      <p>短剧在线观看</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-8">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//pjmp3.de">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/pjyy.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">泡椒音乐</div>
+                    <div class="site-def-url-desc">
+                      <p>免费音乐在线试听</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//yyfang.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yyf.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">音乐坊</div>
+                    <div class="site-def-url-desc">
+                      <p>音乐资源分享平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.qqmp3.vip">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/mp3.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">米兔音乐</div>
+                    <div class="site-def-url-desc">
+                      <p>免费MP3音乐下载</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.buguyy.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/bugu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">布谷音乐</div>
+                    <div class="site-def-url-desc">
+                      <p>高品质音乐在线听</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.fangpi.net">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/pi.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">放屁音乐网</div>
+                    <div class="site-def-url-desc">
+                      <p>音乐下载分享平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.xmwsyy.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/xm.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">熊猫无损音乐</div>
+                    <div class="site-def-url-desc">
+                      <p>无损音乐资源下载</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//sao.fm">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/sao.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">在线电台</div>
+                    <div class="site-def-url-desc">
+                      <p>网络电台在线收听</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//radio.aabb.live">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/svg/dt.svg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">全球电台</div>
+                    <div class="site-def-url-desc">
+                      <p>聆听世界，音乐无界</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-156">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//502book.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/520.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">520Book</div>
+                    <div class="site-def-url-desc">
+                      <p>小说在线阅读平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.jiumodiary.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/jm.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">鸠摩搜索</div>
+                    <div class="site-def-url-desc">
+                      <p>电子书搜索下载平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//mianfei22.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/zssq.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">找书神器</div>
+                    <div class="site-def-url-desc">
+                      <p>小说资源搜索工具</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.10000txt.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/wb.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">万本小说</div>
+                    <div class="site-def-url-desc">
+                      <p>海量小说免费阅读</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//erduowang.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/ys.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">有声听书吧</div>
+                    <div class="site-def-url-desc">
+                      <p>有声读物在线收听</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//onehu.xyz">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ys.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">我不是盐神</div>
+                    <div class="site-def-url-desc">
+                      <p>小说阅读资源平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.yanxuan.org">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/yan.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">盐选</div>
+                    <div class="site-def-url-desc">
+                      <p>精品内容阅读平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//guihualianpian.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/gui.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">鬼话连篇</div>
+                    <div class="site-def-url-desc">
+                      <p>鬼故事大全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainContainer">
+    <div id="autoLoadPage" class="LtopicContainer" autopath="">
+      <div class="collect-card mb-2 p-1">
+        <div class="collect-card-header pt-1 -r-2 pb-2 pl-2">
+          <h3 class="term-title" id="term-1832">好玩有趣</h3>
+          <div class="term-separator"></div>
+          <div class="term-tab">
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-443" class="term-tab-switch term-active">休闲娱乐</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-451" class="term-tab-switch">在线游戏</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-262" class="term-tab-switch">发现趣站</a></div>
+          </div>
+        </div>
+        <div class="collect-card-content">
+          <div class="collect-card-tab pr-1 pl-1 pb-1 tab-active" id="tab-443">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/game/">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/youxi.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">摸鱼小游戏</div>
+                    <div class="site-def-url-desc">
+                      <p>休闲摸鱼小游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/xjj/">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/meitu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">蛙趣视频</div>
+                    <div class="site-def-url-desc">
+                      <p>福利精选短视频</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://wawadh.cn/tool/xds/">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xds.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">复古小电视</div>
+                    <div class="site-def-url-desc">
+                      <p>童年经典小电视精选小品</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/youxiji/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yxj.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">FC游戏机</div>
+                    <div class="site-def-url-desc">
+                      <p>经典FC游戏在线玩</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/daan/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/favicon22.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">答案之书</div>
+                    <div class="site-def-url-desc">
+                      <p>趣味问答互动工具</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/muyu/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/muyu.gif" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">电子木鱼</div>
+                    <div class="site-def-url-desc">
+                      <p>减压静心电子木鱼</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/chisha/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/06.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">今天吃什么</div>
+                    <div class="site-def-url-desc">
+                      <p>还在纠结吃什么嘛？</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/wenan/fengkuangxingqisi.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/feng.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">疯狂星期四</div>
+                    <div class="site-def-url-desc">
+                      <p>疯狂星期四超多离谱文案</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/wenan/tiangou.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/07.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">舔狗日记</div>
+                    <div class="site-def-url-desc">
+                      <p>我们是狗，舔狗</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/wenan/dujitang.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/du.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">毒鸡汤</div>
+                    <div class="site-def-url-desc">
+                      <p>壮士可要来一碗心灵鸡汤!</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/jianfengchazhen/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/jianfeng.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">见缝插针</div>
+                    <div class="site-def-url-desc">
+                      <p>挑战你的反应能力</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/2048/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/2048.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">2048小游戏</div>
+                    <div class="site-def-url-desc">
+                      <p>合并数字到达 2048 !</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://www.wawadh.cn/tool/fuhao/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/bq.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">Emoji表情符号</div>
+                    <div class="site-def-url-desc">
+                      <p>颜文字百科大全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//igroutka.ru/loader/game/45491">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/pao.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">地铁跑酷</div>
+                    <div class="site-def-url-desc">
+                      <p>经典跑酷游戏在线</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//igroutka.ru/loader/game/35515">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/miao.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">神庙逃亡</div>
+                    <div class="site-def-url-desc">
+                      <p>冒险跑酷游戏在线</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//igroutka.ru/loader/game/19820">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ge.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">割绳子</div>
+                    <div class="site-def-url-desc">
+                      <p>经典益智小游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//igroutka.ru/loader/game/57172">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/js.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">植物大战僵尸</div>
+                    <div class="site-def-url-desc">
+                      <p>童年塔防类游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-451">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//poki.com/zh">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/poki.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">Poki小游戏</div>
+                    <div class="site-def-url-desc">
+                      <p>免费在线无广告游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.yikm.net">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xbw.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">小霸王</div>
+                    <div class="site-def-url-desc">
+                      <p>小霸王其乐无穷</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//frvr.com/browse">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/223.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">FRVR小游戏</div>
+                    <div class="site-def-url-desc">
+                      <p>免登录小游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//game.ioxapp.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/baozou.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">暴走微游戏</div>
+                    <div class="site-def-url-desc">
+                      <p>益智小游戏，加载慢</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//flash.homes">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/fff.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">Flash保存计划</div>
+                    <div class="site-def-url-desc">
+                      <p>经典Flash平台游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//oldswf.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/222.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">Oldswf小游戏</div>
+                    <div class="site-def-url-desc">
+                      <p>无需安装flash游戏</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//mcjs.cc">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/wd.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">MC网页版</div>
+                    <div class="site-def-url-desc">
+                      <p>《我的世界》的经典沙盒体验</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//webcs.xyz">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/cs.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">WebCS</div>
+                    <div class="site-def-url-desc">
+                      <p>网页上直接玩CS</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//game.ra2web.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/hj.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">红色警戒</div>
+                    <div class="site-def-url-desc">
+                      <p>童年复古游戏红警</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//figure.game/zh">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/xc.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">每日消除</div>
+                    <div class="site-def-url-desc">
+                      <p>每天更新关卡</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//ys.mihoyo.com/cloud">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yuanshen.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">云·原神</div>
+                    <div class="site-def-url-desc">
+                      <p>一键畅玩原神</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//flappybird.io">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/cbd.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">Flappy</div>
+                    <div class="site-def-url-desc">
+                      <p>控制小鸟飞过障碍物</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//hex.frvr.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/sktc.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">六边消消乐</div>
+                    <div class="site-def-url-desc">
+                      <p>随机色块填充消除</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//github.tanchangwen.com/react-tetris">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/els.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">俄罗斯方块</div>
+                    <div class="site-def-url-desc">
+                      <p>在线体验童年经典</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-262">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//pano.dpm.org.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/gug.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">全景故宫</div>
+                    <div class="site-def-url-desc">
+                      <p>不出门在线游览故宫</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.secaibi.com/howbigisspace">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/sky.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">天空有多高</div>
+                    <div class="site-def-url-desc">
+                      <p>看看天空到底有多高？</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//bubblespop.netlify.app">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/nie.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">捏泡泡</div>
+                    <div class="site-def-url-desc">
+                      <p>减压神器，捏泡泡网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//ffffidget.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/tl.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">指尖陀螺</div>
+                    <div class="site-def-url-desc">
+                      <p>电子指尖陀螺</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//goldfishies.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">电子金鱼</div>
+                    <div class="site-def-url-desc">
+                      <p>在线喂养金鱼</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainContainer">
+    <div id="autoLoadPage" class="LtopicContainer" autopath="">
+      <div class="collect-card mb-2 p-1">
+        <div class="collect-card-header pt-1 -r-2 pb-2 pl-2">
+          <h3 class="term-title" id="term-1837">实用工具</h3>
+          <div class="term-separator"></div>
+          <div class="term-tab">
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-361" class="term-tab-switch term-active">推荐工具</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-214" class="term-tab-switch">图片处理</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-286" class="term-tab-switch">工具效率</a></div>
+          </div>
+        </div>
+        <div class="collect-card-content">
+          <div class="collect-card-tab pr-1 pl-1 pb-1 tab-active" id="tab-361">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://wawadh.cn/ai/index.html">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ai.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">蛙蛙Ai库</div>
+                    <div class="site-def-url-desc">
+                      <p>AI工具资源聚合</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//hot.sapi.run">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/rebang.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">今日热榜</div>
+                    <div class="site-def-url-desc">
+                      <p>全网热点资讯聚合</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.doubao.com/chat">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/doubao.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">豆包Ai助手</div>
+                    <div class="site-def-url-desc">
+                      <p>字节跳动旗下ai产品</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//filehelper.weixin.qq.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/wx.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">微信文件助手</div>
+                    <div class="site-def-url-desc">
+                      <p>微信文件传输助手网页版</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//dy.kukutool.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/shuiyin.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">视频去水印</div>
+                    <div class="site-def-url-desc">
+                      <p>多平台视频去水印下载</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//tool.browser.qq.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/bxm.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">帮小忙</div>
+                    <div class="site-def-url-desc">
+                      <p>腾讯旗下实用工具</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//ol.woobx.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/mh.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">一个木函</div>
+                    <div class="site-def-url-desc">
+                      <p>多功能工具集合</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//tool.lu/tool">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/000.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">在线工具</div>
+                    <div class="site-def-url-desc">
+                      <p>在线实用工具集合</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//1000tool.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/qh.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">千盒工具</div>
+                    <div class="site-def-url-desc">
+                      <p>优质工具在线大全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.tatiao.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/ta.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">塔条工具箱</div>
+                    <div class="site-def-url-desc">
+                      <p>多功能在线工具箱</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//tool.chinaz.com/tools/nav">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/zz.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">站长工具</div>
+                    <div class="site-def-url-desc">
+                      <p>网站分析优化工具</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.aizhan.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/ai.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">爱站网</div>
+                    <div class="site-def-url-desc">
+                      <p>站长seo查询</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//console.letsencrypt.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/sll.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">免费SLL证书</div>
+                    <div class="site-def-url-desc">
+                      <p>Let's Encrypt免费证书支持续签</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//uutool.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/uuu.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">UU在线工具</div>
+                    <div class="site-def-url-desc">
+                      <p>在线工具资源集合</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//tool.xyjzy.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/yj.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">小妖精工具</div>
+                    <div class="site-def-url-desc">
+                      <p>实用工具资源分享</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-214">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//tinify.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/tys.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">图片压缩</div>
+                    <div class="site-def-url-desc">
+                      <p>图片压缩优化工具</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.remove.bg/zh">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/kou.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">一键抠图</div>
+                    <div class="site-def-url-desc">
+                      <p>图片去除背景</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//bigjpg.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/fd.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">图片无损放大</div>
+                    <div class="site-def-url-desc">
+                      <p>AI人工智能图片放大</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//jpghd.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/lao.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">老照片修复</div>
+                    <div class="site-def-url-desc">
+                      <p>人工智能老照片无损修复</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-286">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.ilovepdf.com/zh-cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/pdf.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">PDF全能工具</div>
+                    <div class="site-def-url-desc">
+                      <p>丰富的PDF在线处理工具</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//app.qinglue.com/app/img/icon.jsp">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/tttb.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">网页图标抓取</div>
+                    <div class="site-def-url-desc">
+                      <p>ico图标在线下载</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.100font.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/zt.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">免费商用字体</div>
+                    <div class="site-def-url-desc">
+                      <p>免费商用字体大全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//cli.im">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/222.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">草料二维码</div>
+                    <div class="site-def-url-desc">
+                      <p>二维码生成器</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.wjx.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/wjx.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">问卷星</div>
+                    <div class="site-def-url-desc">
+                      <p>不止调查问卷</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//wx.mail.qq.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/yx.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">QQ邮箱</div>
+                    <div class="site-def-url-desc">
+                      <p>腾讯旗下免费邮箱</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainContainer">
+    <div id="autoLoadPage" class="LtopicContainer" autopath="">
+      <div class="collect-card mb-2 p-1">
+        <div class="collect-card-header pt-1 -r-2 pb-2 pl-2">
+          <h3 class="term-title" id="term-1835">资源大全</h3>
+          <div class="term-separator"></div>
+          <div class="term-tab">
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-881" class="term-tab-switch term-active">精选导航</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-963" class="term-tab-switch">云盘磁力</a></div>
+            <div class="term-tab-item"><a href="javascript:" data-id="tab-959" class="term-tab-switch">资源分享</a></div>
+          </div>
+        </div>
+        <div class="collect-card-content">
+          <div class="collect-card-tab pr-1 pl-1 pb-1 tab-active" id="tab-881">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//axutongxue.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ax.jpeg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">阿虚同学</div>
+                    <div class="site-def-url-desc">
+                      <p>优质资源分享平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.iiice.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xcyd.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">下次一定</div>
+                    <div class="site-def-url-desc">
+                      <p>为白嫖怪开发的宝藏资源</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="https://wawadh.pages.dev">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/wawadh.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title"><strong>蛙蛙导航</strong></div>
+                    <div class="site-def-url-desc">
+                      <p>极简实用网址导航</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.star8.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xsq.jpg" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title"><strong>星书签导航</strong></div>
+                    <div class="site-def-url-desc">
+                      <p>影视工具资源大全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//qinggongju.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/q.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">轻工具导航</div>
+                    <div class="site-def-url-desc">
+                      <p>专注于收集实用网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.plnav.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ml.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">迷鹿导航</div>
+                    <div class="site-def-url-desc">
+                      <p>方便快捷实用的网址导航服务</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.enabcd.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/en.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">EN导航</div>
+                    <div class="site-def-url-desc">
+                      <p>首选白嫖资源站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//caoniang.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ji.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">龙虾导航</div>
+                    <div class="site-def-url-desc">
+                      <p>互联网资源一触即达</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//789bh.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/789.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">789导航</div>
+                    <div class="site-def-url-desc">
+                      <p>热门导航大全</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//juzyw.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ju.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">聚资源导航</div>
+                    <div class="site-def-url-desc">
+                      <p>聚合全网实用资源</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.sbrdh.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/sbr.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">上班人导航</div>
+                    <div class="site-def-url-desc">
+                      <p>上班人必备职场导航</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.xddh.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/xd.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">小刀导航</div>
+                    <div class="site-def-url-desc">
+                      <p>QQ技术导航</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.weidus.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/wd.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">维度导航</div>
+                    <div class="site-def-url-desc">
+                      <p>集网址、资源、资讯于一体的导航网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//e1e1.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ww.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">万维引航</div>
+                    <div class="site-def-url-desc">
+                      <p>致力于打造最全最好的网址导航</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//eeenav.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/eee.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">E导航</div>
+                    <div class="site-def-url-desc">
+                      <p>以极简之名,探索网络之境</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//nav.yuansage.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/ysdh.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">元圣导航网</div>
+                    <div class="site-def-url-desc">
+                      <p>打造一站式IT导航</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.webnav.net">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/qw.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">全网导航</div>
+                    <div class="site-def-url-desc">
+                      <p>导航网址之家</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-963">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.codelicence.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/4k.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">云盘4K</div>
+                    <div class="site-def-url-desc">
+                      <p>综合云资源搜索</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//dyuzi.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/jp.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">聚盘搜索</div>
+                    <div class="site-def-url-desc">
+                      <p>夸克百度资源搜索</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.xuebapan.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xueba.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">学霸盘</div>
+                    <div class="site-def-url-desc">
+                      <p>学习资料搜索</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//pan.qianfan.app">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/qf.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">千帆搜索</div>
+                    <div class="site-def-url-desc">
+                      <p>资源超丰富资源搜索盘</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//laowangbt.top">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/lw.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">老王磁力</div>
+                    <div class="site-def-url-desc">
+                      <p>专业磁力搜</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//xn--twr61h212a.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/gou.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">磁力狗</div>
+                    <div class="site-def-url-desc">
+                      <p>磁力狗最新地址</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//cili.st">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/cl.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">无极磁力</div>
+                    <div class="site-def-url-desc">
+                      <p>无极磁力发布页</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collect-card-tab pr-1 pl-1 pb-1" id="tab-959">
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//haikuoshijie.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xmm.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">小棉袄</div>
+                    <div class="site-def-url-desc">
+                      <p>资源分享交流社区</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//iui.su">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/bsn.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">不死鸟分享</div>
+                    <div class="site-def-url-desc">
+                      <p>优质资源分享平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//ruanyazyk.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/ruan.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">软鸭资源库</div>
+                    <div class="site-def-url-desc">
+                      <p>资源库聚合平台</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//new.xianbao.fun">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/ico/xbk.ico" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">线报酷</div>
+                    <div class="site-def-url-desc">
+                      <p>专注线报活动资讯</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//cjx8.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/xb.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">超级线报</div>
+                    <div class="site-def-url-desc">
+                      <p>实时监控全部线报</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.x6d.com">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/webp/xd.webp" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">小刀娱乐网</div>
+                    <div class="site-def-url-desc">
+                      <p>经典老牌资源网站</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//api.aa1.cn">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/api.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">免费API</div>
+                    <div class="site-def-url-desc">
+                      <p>提供免费api接口调用</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="simple-site site-def-card-item p-1 relative">
+              <a class="site-def-url-card" href="//www.ruancang.net">
+                <div class="site-def-url-body d-flex pt-3 pb-3 pl-2 pr-2 align-items-center">
+                  <div class="site-def-url-img mr-1">
+                    <img src="assets/loading.gif" data-src="assets/imgs/cang.png" class="lazy">
+                  </div>
+                  <div class="site-def-url-info">
+                    <div class="site-def-url-title">软仓</div>
+                    <div class="site-def-url-desc">
+                      <p>ps,ai等专业软件下载</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 收藏提示 -->
+  <div id="bookmark-tip" class="bookmark-tip">
+    觉得蛙蛙导航很不错？那就按住 <span class="key-badge">Ctrl</span> + <span class="key-badge">D</span> 键组合，把 <span class="url-badge">www.wawadh.cn</span> 加入你的浏览器收藏夹吧！
+  </div>
+  <!-- 友情链接和版权信息 -->
+  <div class="footer">
+    <div class="footer-title">友情链接：<a href="javascript:void(0)" class="text-12 bg-gray-light px-6 py-2 rounded-4 ml-8 no-underline text-gray">申请友链</a>
+    </div>
+    <div class="footer-links">
+      <a class="footer-link" href="//www.dalao.net" >大佬论坛</a>
+      <a class="footer-link" href="//dh.hxfst.com">金星导航</a>
+      <a class="footer-link" href="//buzl.cn">不找了</a>
+      <a class="footer-link" href="//boomcatcher.com">Boomcatcher</a>
+      <a class="footer-link" href="//www.weidus.com">维度导航</a>
+      <a class="footer-link" href="//xddh.cn">小刀导航</a>
+      <a class="footer-link" href="//qiandh.com">七安导航</a>
+      <a class="footer-link" href="//www.ymaoo.cn">影猫导航</a>
+      <a class="footer-link" href="//juzyw.com">聚资源导航</a>
+      <a class="footer-link" href="//yinghezhinan.com">硬核指南</a>
+      <a class="footer-link" href="//www.plnav.com">迷鹿导航</a>
+      <a class="footer-link" href="//www.huamaodh.com">花猫导航</a>
+      <a class="footer-link" href="//www.enabcd.cn">En导航</a>
+      <a class="footer-link" href="//www.007la.com">凌凌柒啦导航</a>
+      <a class="footer-link" href="//nav.cocotoolset.cn">cool全能导航</a>
+      <a class="footer-link" href="//www.star8.cn">星书签导航</a>
+      <a class="footer-link" href="//www.f7s.net">电影导航</a>
+      <a class="footer-link" href="//www.atdh.cn">AT导航</a>
+      <a class="footer-link" href="//www.888dhw.cn">888导航</a>
+      <a class="footer-link" href="//www.188dh.cn">188收录网</a>
+    </div>
+  </div>
+  <!-- 底部悬浮导航栏 -->
+  <div class="float-nav">
+    <img src="assets/imgs/abc.png" alt="Logo" class="float-nav-logo">
+    <div class="float-nav-container">
+      <a target="_self" href="#term-1834" class="float-nav-item">站长推荐</a>
+      <span class="float-nav-divider">|</span>
+      <a target="_self" href="#term-1836" class="float-nav-item">影音资源</a>
+      <span class="float-nav-divider">|</span>
+      <a target="_self" href="#term-1832" class="float-nav-item">好玩有趣</a>
+      <span class="float-nav-divider">|</span>
+      <a target="_self" href="#term-1837" class="float-nav-item">实用工具</a>
+      <span class="float-nav-divider">|</span>
+      <a target="_self" href="#term-1835" class="float-nav-item">资源大全</a>
+      <span class="float-nav-divider">|</span>
+      <a target="_self" href="#bookmark-tip" class="float-nav-item">收藏本站</a>
+    </div>
+  </div>
+  <footer class="footer footer-bottom" id="footer">
+    <div class="container-fluid container-footer">
+      <ul class="list-inline">
+        <li>
+          <p><a class="footer-logo" href="" title="">
+              <img src="assets/imgs/logo.png" alt="蛙蛙导航" class="lazyload h-40">
+            </a></p>
+          <p class="title-h-left">www.wawadh.cn</p>
+          <div class="footer-muted em09">
+            <div id="site-slogan">蛙蛙导航 - 极简实用网址导航</div>
+          </div>
+        </li>
+        <li>
+          <p class="fcode-links">
+          <a href="">广告合作</a>
+          <a href="">免责声明</a>
+          <a href="">投稿收录</a>
+          <a href="">网站地图</a>
+          </p>
+          <div class="footer-muted em09"><a target="_blank" href="">&copy; 2025 蛙蛙导航 All Rights Reserved</a></div>
+        </li>
+        <li>
+          <div class="footer-miniimg" data-toggle="tooltip" title="扫码加微信">
+            <p>
+              <img class="lazyload" src="assets/imgs/wx.jpg" alt="扫码加微信">
+            </p>
+            <span class="opacity8 em09">站长微信</span>
+          </div>
+          <div class="footer-miniimg" data-toggle="tooltip" title="米夏头像">
+            <p>
+              <img class="lazyload" src="assets/imgs/qq.jpg" alt="扫码加群">
+            </p>
+            <span class="opacity8 em09">官方Q群</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- 悬浮工具栏 -->
+  <div class="float-toolbar">
+    <div class="float-btn top-btn" id="backToTop" title="回到顶部">
+      <div class="btn-icon">
+        <div class="icon-top"></div>
+      </div>
+    </div>
+    <div class="float-btn save-btn" id="saveTool" title="省钱助手">
+      <div class="btn-icon">
+        <div class="icon-save"></div>
+      </div>
+    </div>
+    <div class="float-btn share-btn" id="shareBtn" title="分享">
+      <div class="btn-icon">
+        <div class="icon-share"></div>
+      </div>
+    </div>
+  </div>
+  <div id="shareToast" class="share-toast">复制成功，快去分享给小伙伴吧！</div>
+
+  <!-- 外卖红包弹窗 -->
+  <div class="waimai-popup-mask" id="waimaiPopupMask">
+    <div class="waimai-popup" id="waimaiPopup">
+      <button class="waimai-popup-close" onclick="closeWaimaiPopup()">&times;</button>
+      <div class="waimai-popup-header">
+        <h2 class="waimai-popup-title">点外卖先领券，帮你省一半</h2>
+        <div class="waimai-tabs">
+          <span class="waimai-tab-item active" data-tab="waimai-tab1">美团外卖</span>
+          <span class="waimai-tab-item" data-tab="waimai-tab2">淘宝闪购</span>
+          <span class="waimai-tab-item" data-tab="waimai-tab3">京东外卖</span>
+        </div>
+      </div>
+      <div class="waimai-popup-body">
+        <div class="waimai-tab-content active" id="waimai-tab1">
+          <div class="waimai-content-wrapper">
+            <img src="assets/imgs/meituan.png" alt="美团外卖" class="waimai-qr-code">
+            <p class="waimai-desc">
+              优惠说明：每日可领最高<span class="waimai-highlight">288元</span>外卖神券
+            </p>
+            <p class="waimai-desc">
+              领取方法：美团或微信扫一扫 先领后买
+            </p>
+            <div class="waimai-button-container">
+              <button class="waimai-btn-copy" onclick="copyWaimaiPassword(0)">复制口令</button>
+              <button class="waimai-btn-order" onclick="directWaimaiOrder(0)">直接下单</button>
+            </div>
+          </div>
+        </div>
+        <div class="waimai-tab-content" id="waimai-tab2">
+          <div class="waimai-content-wrapper">
+            <img src="assets/imgs/taobao.png" alt="淘宝闪购" class="waimai-qr-code">
+            <p class="waimai-desc">
+              优惠说明：最高<span class="waimai-highlight">88元</span>红包（每日可领）
+            </p>
+            <p class="waimai-desc">
+              领取方法：淘宝或微信扫一扫  先领后买
+            </p>
+            <div class="waimai-button-container">
+              <button class="waimai-btn-copy" onclick="copyWaimaiPassword(1)">复制口令</button>
+              <button class="waimai-btn-order" onclick="directWaimaiOrder(1)">直接下单</button>
+            </div>
+          </div>
+        </div>
+        <div class="waimai-tab-content" id="waimai-tab3">
+          <div class="waimai-content-wrapper">
+            <img src="assets/imgs/jingdong.png" alt="京东外卖" class="waimai-qr-code">
+            <p class="waimai-desc">
+              优惠说明：超省钱！外卖券包<span class="waimai-highlight">3折</span>起
+            </p>
+            <p class="waimai-desc">
+              领取方法：京东或微信扫一扫 先领后买
+            </p>
+            <div class="waimai-button-container">
+              <button class="waimai-btn-copy" onclick="copyWaimaiPassword(2)">复制口令</button>
+              <button class="waimai-btn-order" onclick="directWaimaiOrder(2)">直接下单</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 历史记录弹窗 -->
+  <div class="history-popup-mask" id="historyPopupMask">
+    <div class="history-popup" id="historyPopup">
+      <div class="history-popup-header">
+        <h3 class="history-popup-title">最近访问</h3>
+        <button class="history-popup-close" onclick="closeHistoryPopup()">&times;</button>
+      </div>
+      <div class="history-popup-body">
+        <div class="history-list" id="historyList">
+          <div class="history-empty" id="historyEmpty">暂无访问记录</div>
+        </div>
+      </div>
+      <div class="history-popup-footer">
+        <button class="history-clear-btn" onclick="clearAllHistory()">清空全部历史记录</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/simple.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
